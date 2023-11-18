@@ -1,8 +1,8 @@
-use std::cell::{Cell};
+use std::cell::{RefCell};
 use std::rc::Rc;
 
 struct TotalCoins {
-    coins: Vec<Rc<Cell<i32>>>
+    coins: Vec<Rc<RefCell<i32>>>
 }
 
 impl TotalCoins {
